@@ -36,7 +36,7 @@ with st.beta_expander("Machine learning in stock market"):
 
 st.subheader("Know About FAAMG 💸")
 with st.beta_expander("What Are FAAMG Stocks?"):
-    st.markdown("In finance, “FAAMG” is an acronym that refers to the stocks of five prominent American technology companies: Facebook (FB), Amazon (AMZN), Apple (AAPL), Microsoft (MSFT); and Google (GOOG)")
+    st.markdown("In finance, “FAAMG” is an acronym that refers to the stocks of five prominent American technology companies: Facebook (FB), Amazon (AMZN), Apple (AAPL), Microsoft (MSFT); and Alphabet's Google (GOOG)")
 
 with st.beta_expander("Understanding FAAMG Stocks"):
     st.markdown('Approximately 3,000 companies (mostly tech companies) trade on the NASDAQ, and the Nasdaq Composite Index, which indicates how the tech sector is faring in the economy. Facebook (FB), Amazon (AMZN), Apple (AAPL), Microsoft (MSFT), and Alphabet (GOOG) accounted for 55% of the NASDAQ’s year-to-date (YTD) gains as of June 9, 2017.')
