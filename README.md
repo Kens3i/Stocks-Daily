@@ -5,15 +5,15 @@
 
 ## Table of Contents
 
-1.  [Overview](#Overview)
+1.  [Overview](#Overview 📑)
     
-2.  [Motivation](#Motivation)
+2.  [Motivation](#Motivation ✒️)
     
-3.  [Libraries Used](#Libraries-Used)
+3.  [Libraries Used](#Libraries-Used 📎)
     
-4.  [Workflow](#Workflow)
-5.  [Screesnshots](#Screesnshots)
-6. [FAQs](#FAQs)
+4.  [Workflow](#Workflow 🛠)
+5.  [Screesnshots](#Screesnshots 📸)
+6. [FAQs](#FAQs 📌)
 
 ## Overview 📑
 
