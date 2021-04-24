@@ -5,15 +5,15 @@
 
 ## Table of Contents
 
-1.  [Overview](https://github.com/Kens3i/Stocks-Daily/#Overview)
+1.  [Overview](#Overview)
     
-2.  [Motivation](https://github.com/Kens3i/Stocks-Daily#Motivation)
+2.  [Motivation](#Motivation)
     
-3.  [Libraries Used](https://github.com/Kens3i/Stocks-Daily#Libraries-Used)
+3.  [Libraries Used](#Libraries-Used)
     
-4.  [Workflow](https://github.com/Kens3i/Stocks-Daily#Workflow)
-5.  [Screesnshots](https://github.com/Kens3i/Stocks-Daily#Screesnshots)
-6. [FAQs](https://github.com/Kens3i/Stocks-Daily#FAQs)
+4.  [Workflow](#Workflow)
+5.  [Screesnshots](#Screesnshots)
+6. [FAQs](#FAQs)
 
 ## Overview 📑
 
