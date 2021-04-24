@@ -5,25 +5,25 @@
 
 ## Table of Contents
 
-1.  [Overview](#Overview 📑)
+1.  [Overview](#Overview)
     
-2.  [Motivation](#Motivation ✒️)
+2.  [Motivation](#Motivation)
     
-3.  [Libraries Used](#Libraries-Used 📎)
+3.  [Libraries Used](#Libraries-Used)
     
-4.  [Workflow](#Workflow 🛠)
-5.  [Screesnshots](#Screesnshots 📸)
-6. [FAQs](#FAQs 📌)
+4.  [Workflow](#Workflow)
+5.  [Screesnshots](#Screesnshots)
+6. [FAQs](#FAQs)
 
-## Overview 📑
+## Overview
 
 This app let's you to generate a **live time-series** forecast of FAAMG stocks, **predict** the future price of them(upto 7 years) and also lets you **convert the currecy** as per your needs. Click [here](https://share.streamlit.io/kens3i/stocks-daily/main/main.py) to visit the website !
 
-## Motivation ✒️
+## Motivation
 
 I was very curious about how stock markets work and how people became rich by investing in the right stocks (For Ex:Warrren Buffet) at the right time. For newbies like me who couldn't predict the stock prices based on so many data that is present on the internet I created this app to let people see the trends and growth the stock market get if someone invests for a long time. Also this app gave me a solid idea how the time series forecasting works and how the prediction of the prices occurs.
 
-## Libraries-Used 📎
+## Libraries-Used
 
 -   `yfinance`
 -   `fbprophet`
@@ -33,7 +33,7 @@ I was very curious about how stock markets work and how people became rich by in
 -   `pandas`
 -   `requests`
 
-## Workflow 🛠
+## Workflow
 
 - **Selecting** a ticker(stock symbol) .
 - **Extracting** the stocks data of the selected ticker from `yfinance` library.
@@ -43,13 +43,13 @@ I was very curious about how stock markets work and how people became rich by in
 - As the prices are in `USD` the user can see how much does `USD` compares with their local currency and can find an **estimate price**.
 - To do the currency conversion I used **Rates API** which is a free service for current and historical foreign exchange rates built on top of data published by [European Central Bank.](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html)
 
-## Screesnshots 📸
+## Screesnshots
 ![](https://github.com/Kens3i/Stocks-Daily/blob/main/gifs/Stock%20intro.gif)
 ![](https://github.com/Kens3i/Stocks-Daily/blob/main/gifs/Stocks%20SS%20predict.gif)
 ![](https://github.com/Kens3i/Stocks-Daily/blob/main/gifs/SS%20Currency.gif)
 
 
-## Challenges I Faced 💣
+## Challenges I Faced
 
 - I just knew a little bit of HTML and CSS which was not sufficient to make this project, thankfully streamlit saved me.
 - Took me some time just to know how the `fbprophet` library actually works.
@@ -57,7 +57,7 @@ I was very curious about how stock markets work and how people became rich by in
 - Didn't knew much about stock markets so spend some time studying the basics of the stock market.
 - Had some deployment issues so I had to manually select all the libraries in requirements.txt.
 
-## FAQs 📌
+## FAQs
 
 ### Why Time-Series Forecasting ?
 The common trend towards the stock market among the society is that it is highly risky for investment or not suitable for trade so most of the people are not even interested. The seasonal variance and steady flow of any index will help both existing and new investors to understand and make a decision to invest in the stock/share market.
