@@ -43,7 +43,7 @@ I was very curious about how stock markets work and how people became rich by in
 - As the prices are in `USD` the user can see how much does `USD` compares with their local currency and can find an **estimate price**.
 - To do the currency conversion I used **Rates API** which is a free service for current and historical foreign exchange rates built on top of data published by [European Central Bank.](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html)
 
-## Screesnshots
+## Screenshots
 ![](https://github.com/Kens3i/Stocks-Daily/blob/main/gifs/Stock%20intro.gif)
 ![](https://github.com/Kens3i/Stocks-Daily/blob/main/gifs/Stocks%20SS%20predict.gif)
 ![](https://github.com/Kens3i/Stocks-Daily/blob/main/gifs/SS%20Currency.gif)
