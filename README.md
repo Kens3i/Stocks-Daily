@@ -5,7 +5,7 @@
 
 ## Table of Contents
 
-1.  [Overview](https://github.com/Kens3i/Stocks-Daily#Overview)
+1.  [Overview](https://github.com/Kens3i/Stocks-Daily/#Overview)
     
 2.  [Motivation](https://github.com/Kens3i/Stocks-Daily#Motivation)
     
