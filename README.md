@@ -44,6 +44,9 @@ I was very curious about how stock markets work and how people became rich by in
 - To do the currency conversion I used **Rates API** which is a free service for current and historical foreign exchange rates built on top of data published by [European Central Bank.](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html)
 
 ## Screesnshots 📸
+![](https://github.com/Kens3i/Stocks-Daily/blob/main/gifs/Stock%20intro.gif)
+![](https://github.com/Kens3i/Stocks-Daily/blob/main/gifs/SS%20Currency.gif)
+![](https://github.com/Kens3i/Stocks-Daily/blob/main/gifs/Stock%20intro.gif)
 
 
 ## Challenges I Faced 💣
