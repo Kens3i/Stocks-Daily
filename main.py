@@ -21,7 +21,7 @@ TODAY = date.today().strftime("%Y-%m-%d")
 
 # Setting the title of the App
 st.title("Stocks Daily 📈")
-st.write('This app enables you to generate live time series forecast of FAAMG companies and convert the currency as per your needs.')
+st.write("This app let's you to generate a **live time-series** forecast of FAAMG stocks, **predict** the future price of them(upto 7 years) and also lets you **convert the currecy** as per your needs.")
 st.markdown("""The forecasting library used is Facebook's **[Prophet](https://facebook.github.io/prophet/)**.""")
 st.markdown("![Gif](https://miro.medium.com/max/620/0*dunTLlei47QWR7NR.gif)")
 
