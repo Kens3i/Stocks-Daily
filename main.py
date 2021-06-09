@@ -2,6 +2,7 @@
 # If you find any value this do upvote/give a star.
 
 import pandas as pd
+import numpy as np
 import requests
 import json
 import streamlit as st
@@ -182,37 +183,46 @@ if start_execution:
 st.subheader("Convert Your Currency ⚖️")
 st.image("https://cdn.dribbble.com/users/22930/screenshots/1923847/money.gif",width=340)
 st.markdown("**Input Option**")
-currency_list = ['INR', 'USD', 'AUD', 'BGN', 'BRL', 'CAD', 'CHF', 'CNY', 'CZK', 'DKK', 'GBP', 'HKD', 'HRK', 'HUF', 'IDR', 'ILS', 'ISK', 'JPY', 'KRW', 'MXN', 'MYR', 'NOK', 'NZD', 'PHP', 'PLN', 'RON', 'RUB', 'SEK', 'SGD', 'THB', 'TRY', 'ZAR']
-base_price_unit = st.selectbox('Select base currency for conversion', currency_list)
-symbols_price_unit = st.selectbox('Select target currency to convert to', currency_list)
 
-@st.cache
-def load_curr():
-    #Loading the restAPI
-    url = ''.join(['https://api.ratesapi.io/api/latest?base=', base_price_unit, '&symbols=', symbols_price_unit])
+def currency_converter():
+    url = "https://free.currconv.com/api/v7/currencies?apiKey=73373685ba13d7df49a0"
+    # Loading the restAPI
     response = requests.get(url)
-    # As the contents are in the form of jason so we are doing this
-    da = response.json()
-    #extracting the base currency
-    base_currency = pd.Series( da['base'], name='base_currency')
+    # Getting a response from url
+    status_get = response.content
+    # Converting to utf-8
+    status_get = status_get.decode('utf-8')
+    # Getting response from the json file
+    status_json = json.loads(status_get)
+    # making an array for storing currency
+    all_currencies = []
+    for i in status_json["results"]:
+        all_currencies.append(i)
+    number = st.number_input('Input the Value')
+    # rounding the input to 2 digit place
+    number = round(number,2)
+    # selecting the currency to convert
+    option = st.selectbox('', all_currencies, key=1)
+    # filling values
+    value = st.empty()
+    # Selecting the currency to convert to
+    option2 = st.selectbox('', all_currencies, key=2)
 
-    #Creating a dataframe which will take in converted currency and price
-    rates_df = pd.DataFrame.from_dict( da['rates'].items() )
-    rates_df.columns = ['converted_currency', 'price']
+    left_column, right_column = st.beta_columns(2)
+    pressed = left_column.button('Convert 💱')
+    if pressed:
+        sta = str(option)+"_"+str(option2)
+        url = "https://free.currconv.com/api/v7/convert?q="+sta+"&compact=ultra&apiKey=73373685ba13d7df49a0"
+        response = requests.get(url)
+        status_get = response.content
+        status_get = status_get.decode('utf-8')
+        status_json = json.loads(status_get)
+        value.success(status_json[sta] * number)
+        converter = "1 "+option+" = "+str(status_json[sta])+" "+option2
+        st.write(converter)
 
-    # Creating a dataframe which will take in the dates
-    conversion_date = pd.Series( da['date'], name='date' )
-    df = pd.concat( [base_currency, rates_df, conversion_date], axis=1 ) #axis = 1 so concat side by side
-    return df
-  
-  
-try:
-    df = load_curr()
-    st.subheader('Converted Currency 💱')
-    st.write(df)
-except requests.exceptions.ConnectionError:
-    st.write("Connection Temporarily Refused, An API Error")
 
+currency_converter()
 
 
 with st.beta_expander("Credits 💎"):
@@ -222,5 +232,5 @@ with st.beta_expander("Credits 💎"):
     st.markdown("""**[Source code]()**""")
     st.markdown("""
     * **Python libraries:** streamlit, pandas, datetime, yfinance, fbprophet, plotly, requests, json
-    * **Data source(For Currency):** [ratesapi.io](https://ratesapi.io/) which is based on data published by [European Central Bank](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html)
+    * **Data source(For Currency):** [currencyconverterapi.com](https://www.currencyconverterapi.com/)
     """)
