@@ -31,6 +31,7 @@ I was very curious about how stock markets work and how people became rich by in
 -   `streamlit`
 -   `datetime`
 -   `pandas`
+-   `numpy`
 -   `requests`
 
 ## Workflow
@@ -41,7 +42,7 @@ I was very curious about how stock markets work and how people became rich by in
 - **Ploting** the raw data and  giving an overview of the dataset.
 - Clicking the prediction button and getting the **forecast data** along with daily,weekly and yearly trends.
 - As the prices are in `USD` the user can see how much does `USD` compares with their local currency and can find an **estimate price**.
-- To do the currency conversion I used **Rates API** which is a free service for current and historical foreign exchange rates built on top of data published by [European Central Bank.](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html)
+- To do the currency conversion I used **currencyconverterapi.com**.
 
 ## Screenshots
 ![](https://github.com/Kens3i/Stocks-Daily/blob/main/gifs/Stock%20intro.gif)
