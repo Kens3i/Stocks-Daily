@@ -47,7 +47,7 @@ I was very curious about how stock markets work and how people became rich by in
 ## Screenshots
 ![](https://github.com/Kens3i/Stocks-Daily/blob/main/gifs/Stock%20intro.gif)
 ![](https://github.com/Kens3i/Stocks-Daily/blob/main/gifs/Stocks%20SS%20predict.gif)
-![](https://github.com/Kens3i/Stocks-Daily/blob/main/gifs/SS%20Currency.gif)
+![](https://raw.githubusercontent.com/Kens3i/Stocks-Daily/main/gifs/SSCurrency%20New.gif)
 
 
 ## Challenges I Faced
