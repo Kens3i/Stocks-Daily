@@ -228,7 +228,7 @@ currency_converter()
 with st.beta_expander("Credits 💎"):
     st.subheader("Author:")
     st.image("https://avatars.githubusercontent.com/u/52373756?s=400&u=f3b4f3403656c3f61c6b378f1028803bd9e81031&v=4")
-    st.markdown(""" App Made By **[Koustav Banerjee](https://www.linkedin.com/in/kens3i/)**""")
+    st.markdown(""" App Made By **[Koustav Banerjee](https://www.linkedin.com/in/koding-senpai/)**""")
     st.markdown("""**[Source code](https://github.com/Kens3i/Stocks-Daily)**""")
     st.markdown("""
     * **Python libraries:** streamlit, pandas, datetime, yfinance, fbprophet, plotly, requests, json
