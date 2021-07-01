@@ -186,14 +186,18 @@ st.markdown("**Input Option**")
 
 def currency_converter():
     url = "https://free.currconv.com/api/v7/currencies?apiKey=73373685ba13d7df49a0"
-    # Loading the restAPI
+    # Make a request to a web page, and return the status code
     response = requests.get(url)
-    # Getting a response from url
+    
+    # response.content returns the content of the response, in bytesl
     status_get = response.content
-    # Converting to utf-8
+    
+    # decoding the bytes from utf-8 to string
     status_get = status_get.decode('utf-8')
-    # Getting response from the json file
+    
+    # parsing and stored the json string to python dictionary
     status_json = json.loads(status_get)
+    
     # making an array for storing currency
     all_currencies = []
     for i in status_json["results"]:
@@ -211,13 +215,19 @@ def currency_converter():
     left_column, right_column = st.beta_columns(2)
     pressed = left_column.button('Convert 💱')
     if pressed:
+        # This is used for conversion
         sta = str(option)+"_"+str(option2)
+        
         url = "https://free.currconv.com/api/v7/convert?q="+sta+"&compact=ultra&apiKey=73373685ba13d7df49a0"
         response = requests.get(url)
         status_get = response.content
         status_get = status_get.decode('utf-8')
         status_json = json.loads(status_get)
+        
+        # if the value is valid then -> number * 1 unit of input currency = output currency.
         value.success(status_json[sta] * number)
+        
+        # here we display 1 unit of input currency = how much unit of output currency
         converter = "1 "+option+" = "+str(status_json[sta])+" "+option2
         st.write(converter)
 
