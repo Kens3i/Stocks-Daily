@@ -31,7 +31,6 @@ I was very curious about how stock markets work and how people became rich by in
 -   `streamlit`
 -   `datetime`
 -   `pandas`
--   `numpy`
 -   `requests`
 
 ## Workflow
