@@ -17,7 +17,7 @@
 
 ## Overview
 
-This app let's you to generate a **live time-series** forecast of FAAMG stocks, **predict** the future price of them(upto 7 years) and also lets you **convert the currecy** as per your needs. Click [here](https://share.streamlit.io/kens3i/stocks-daily/main/main.py) to visit the website !
+This app lets you generate a live time-series forecast of FAAMG stocks, predict the future price of them(up to 7 years), and also lets you convert the currency as per your needs. Click here to visit the website !. Click [here](https://share.streamlit.io/kens3i/stocks-daily/main/main.py) to visit the website !
 
 ## Motivation
 
