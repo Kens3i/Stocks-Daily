@@ -38,7 +38,7 @@ I was very curious about how stock markets work and how people became rich by in
 - **Selecting** a ticker(stock symbol) .
 - **Extracting** the stocks data of the selected ticker from `yfinance` library.
 - Selecting how many years the user wants to **predict**.
-- **Ploting** the raw data and  giving an overview of the dataset.
+- **Plotting** the raw data and  giving an overview of the dataset.
 - Clicking the prediction button and getting the **forecast data** along with daily,weekly and yearly trends.
 - As the prices are in `USD` the user can see how much does `USD` compares with their local currency and can find an **estimate price**.
 - To do the currency conversion I used **currencyconverterapi.com**.
